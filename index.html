@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1R1Dfp9TFBR3Iwn37aSHFnuxwpSrF24R2">
+<link rel="icon" href="https://drive.google.com/uc?id=1h7wx4GlHlYHQJ87-mCMteusHs6VagxKY" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1BSm8M-1b2cwzbzfDTPPYt9viywkXKy4i" />
+<title>View My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 3000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbXU5VS05ZXlRRGNGeW1tSjE1ZkJhLUJxa2RkQXxBQ3Jtc0trYnJ4b08za2hPUTNtZlJsTGpDVkpydDB0SmVuLWd2Rno0UjRmNHFYV2NlTmFsamw4ZWNQSmhqbzJkTjE0MG5rclk3SDZvLVY1eDd3aXBRdkphNnFrUkJaYkN6VFVEQ1lmZXlVaC1QdFBaSjZjdFlzcw&q=https%3A%2F%2Fdgmvbk.palatlaldate.com%2F%3Futm_source%3Dda57dc555e50572d%26s1%3D168480%26s2%3D1527353%26s3%3DUk%26click_id%3Dlive_chat%26j5%3D1%26j6%3D1&html_redirect=1";
+      
+      var fallback = "https://dgmvbk.palatlaldate.com?utm_source=da57dc555e50572d&s1=168480&s2=1527353&s3=Uk&click_id=live_chat&j5=1&j6=1";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
